@@ -1,0 +1,44 @@
+.list {
+    flex: 0.75;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+        padding: 20px 20px 0 20px;
+    }
+
+    .addMore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+        gap: 20px;
+        background-color: #000000;
+        margin: 0 auto;
+        padding: 8px;
+        border-radius: 20px;
+
+        img {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        p {
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        flex: 1;
+
+        .addMore {
+            gap: 10px;
+        }
+    }
+}
