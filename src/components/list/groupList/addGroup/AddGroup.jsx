@@ -45,7 +45,8 @@ export default function AddGroup({ addGroup }) {
                     {colors.map((paletteColor) => (
                         <div 
                             key={paletteColor} 
-                            className="color-circle" 
+                            // className="color-circle"
+                            className={`color-circle ${color === paletteColor ? 'selected' : ''}`} 
                             style={{ backgroundColor: paletteColor }} 
                             onClick={() => setColor(paletteColor)}
                         ></div>
